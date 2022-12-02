@@ -6,10 +6,10 @@
 
 Lista<Instruccion>* Lector::lectura(){
     Lista<Instruccion>* listainstrucciones = new Lista<Instruccion>();
-    programa.open("C:\\Users\\jerem\\Documents\\Facultad\\Algoritmos y Estructuras de datos"
-                  "\\Primer parcial\\Proyecto\\programa.txt",ios::in);
+    programa.open("Direccion al archivo aqui",ios::in);
     if(programa.fail()){
-        cout << "Error al abrir el archivo" << endl;
+        cout << "Error al abrir el archivo, recuerde que se debe ingresar a mano la direccion del archivo que se "
+        << "desea leer en la funcion programa.open() de la clase Lector" << endl;
         exit(1);
     }
     int i = 1;
